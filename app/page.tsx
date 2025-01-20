@@ -1,5 +1,6 @@
 import PatientForm from "@/components/forms/PatientForm";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -14,8 +15,32 @@ const Home = () => {
             className="mb-12 h-10 w-fit"
           />
           <PatientForm />
+
+          <div className="text-14-regular mt-20 flex justify-between">
+            <p className="justify-items-end text-dark-600 xl:text-left">
+              © 2025 Patiens. Developed by&nbsp;
+              <a
+                href="https://harrisonthecybermaniac.com.ng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-200"
+              >
+                Harrsion | The Cybermaniac
+              </a>
+            </p>
+            <Link href="/?admin=true" className="text-primary-200">
+              Admin
+            </Link>
+          </div>
         </div>
       </section>
+      <Image
+        src="/assets/images/onboarding-img.png"
+        alt="onboarding"
+        height={1000}
+        width={1000}
+        className="side-img max-w-[50%]"
+      />
     </div>
   );
 };

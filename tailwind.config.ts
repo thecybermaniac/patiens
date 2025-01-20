@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import * as tailwindAnimate from "tailwindcss-animate"
+import * as tailwindAnimate from "tailwindcss-animate";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config = {
@@ -21,6 +21,10 @@ const config = {
     },
     extend: {
       colors: {
+        primary: {
+          100: "#FF7F50",
+          200: "#FFA483"
+        },
         green: {
           500: "#24AE7C",
           600: "#0D2A1F",
